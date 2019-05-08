@@ -1,0 +1,27 @@
+{
+  "name": "tectro",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustmg/tectro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustmg/tectro/issues"
+  },
+  "homepage": "https://github.com/gustmg/tectro#readme"
+}
