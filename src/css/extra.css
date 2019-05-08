@@ -1,3 +1,11 @@
 body{
     background: grey;
 }
+
+.navbar-height{
+    height: 64px;
+}
+
+.custom-line-height{
+    line-height: 1.5;
+}
