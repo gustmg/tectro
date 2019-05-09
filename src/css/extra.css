@@ -1,5 +1,17 @@
+html, body{
+    height: 100%;
+}
+
 body{
     background: grey;
+}
+
+main{
+    height: calc(100% - 64px) !important;
+}
+
+.full-height{
+    height: 100% !important;
 }
 
 .navbar-height{
@@ -8,4 +20,9 @@ body{
 
 .custom-line-height{
     line-height: 1.5;
+}
+
+.vertical-align{
+    display: flex;
+    align-items: center;
 }
