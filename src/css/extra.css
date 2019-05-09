@@ -3,11 +3,11 @@ html, body{
 }
 
 body{
-    background: grey;
+    /* background: #e0e0e0; */
 }
 
 main{
-    height: calc(100% - 64px) !important;
+    height: 100% !important;
 }
 
 .full-height{
@@ -25,4 +25,16 @@ main{
 .vertical-align{
     display: flex;
     align-items: center;
+}
+
+h1, h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    background-color: #005b99;
+    color: white;
 }
