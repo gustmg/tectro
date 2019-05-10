@@ -50,26 +50,97 @@ h1, h5 {
 
 footer{
     padding-top:64px;
-    background: linear-gradient(223deg, #005b99, #0021a7, #3a4b8e);
-    background-size: 600% 600%;
+    
+    background-color:#005b99;
+}
 
-    -webkit-animation: AnimationName 9s ease infinite;
-    -moz-animation: AnimationName 9s ease infinite;
-    animation: AnimationName 9s ease infinite;
+@media only screen and (min-width: 320px) {
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 99%}
-        50%{background-position:100% 2%}
-        100%{background-position:0% 99%}
+  /* Small screen, non-retina */
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+
+  /* Small screen, retina, stuff to override above media query */
+  h1{
+      text-align: center;
+  }
+  footer{
+      padding-top:32px;
+      height: 110%;  
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  /* Medium screen, non-retina */
+  h1{
+      text-align: center;
+  }
+    footer{
+        padding-top:32px;
+        height: 110%;  
     }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 99%}
-        50%{background-position:100% 2%}
-        100%{background-position:0% 99%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:0% 99%}
-        50%{background-position:100% 2%}
-        100%{background-position:0% 99%}
-    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) { 
+
+  /* Medium screen, retina, stuff to override above media query */
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+  /* Large screen, non-retina */
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+
+  /* Large screen, retina, stuff to override above media query */
+
+}
+
+.button-whatsapp{
+    position:fixed !important;
+    bottom: 24px;
+    right: 24px;
+    z-index: 5;
+    background-color: #169b0c !important;
+}
+
+.logo-smartphone{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: .3;
+}
+
+.tectro-color{
+    color: #005b99;
 }
