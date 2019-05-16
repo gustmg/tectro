@@ -7,16 +7,43 @@
     <meta name="theme-color" content="#005b99"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="src/css/extra.css" rel="stylesheet">
     <title>Tectro</title>
 </head>
 <body>
     <nav class="navbar navbar-light bg-white navbar-height fixed-top">
-        <a href="#" class="nav-link" data-toggle="collapse" data-target="#navbarToggleExternalContent"><i class="tectro-color material-icons custom-line-height">menu</i></a>
+        <a id="menu-button" class="nav-link selectable navbar-toggle" data-toggle="collapse" data-target="#menuContent"><i class="tectro-color material-icons custom-line-height">menu</i></a>
         <img src="src/img/logo.png" height="20">
         <a href="tel:+522227853012" class="nav-link"><i class="tectro-color material-icons custom-line-height">phone</i></a>
     </nav>
+    <div id="menuContent" class="collapse">
+        <div class="container" style="padding-top:48px;padding-bottom:48px;" align="center">
+            <div class="row">
+                <div class="col-sm-6 col-md-2">
+                    <a href="#"><img src="src/img/laptop.png"><br>Mantenimiento a equipo de cómputo</a>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <a href="#"><img src="src/img/printer.png"><br>Servicio a impresoras</a>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <a href="#"><img src="src/img/laptop.png"><br>Tóners y recargas compatibles</a>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <a href="#"><img src="src/img/laptop.png"><br>Conectividad</a>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <a href="#"><img src="src/img/laptop.png"><br>Ventas y accesorios</a>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <a href="#"><img src="src/img/laptop.png"><br>Desarrollo</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
-        <a class="mdc-fab button-whatsapp" href="https://wa.me/5212229087811" aria-label="Favorite">
+        <a class="button-whatsapp" href="https://wa.me/5212229087811" aria-label="Favorite">
             <img src="src/img/wa.png" width="64">
         </a>
         <div class="container full-height">
@@ -25,7 +52,7 @@
                 <div class="col-md-3 col-sm-4 offset-md-3 align-self-center d-none d-md-block d-lg-block">
                     <img src="src/img/tec.png" width="220">
                 </div>
-                <div class="col-md-5 col-sm-4 align-self-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
                     <h1><b>Excelencia, transparencia y honestidad</b></h1>
                 </div>
             </div>
@@ -42,20 +69,46 @@
             <div class="row">
                 <div class="align-self-center d-none d-md-block d-lg-block" style="position:absolute;z-index:1;max-width: 460px;right:50%;">
                     <div class="card no-border">
-                        <div class="card-body">
-                            <h2 class="card-title"><b>Mantenimiento a <br>equipo de cómputo</b></h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                            <a href="#">Solicitar cotización</a>
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1" align="center">
+                                    <h2 class="card-title"><b>Mantenimiento a equipo de cómputo</b></h2><br>
+                                </div>
+                                <div class="col-md-12">
+                                    <h5><img class="subheader-image-padding" src="src/img/laptop.png">Subheader 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p>
+                                    <h5><img class="subheader-image-padding" src="src/img/printer.png">Subheader 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p><br>
+                                </div>
+                                <div class="col-md-8 offset-md-2">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 offset-md-4" style="z-index:0;">
                     <img src="src/img/pc.jpg" class="img-fluid">
                 </div>
-                <div class="col-sm-4 d-block d-sm-block d-md-none" align="center">
-                    <h2 class="card-title"><b>Mantenimiento a equipo de cómputo</b></h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                    <a href="#">Solicitar cotización</a>
+                <div class="col-sm-12 d-block d-sm-block d-md-none">
+                    <div class="row">
+                        <div class="col-sm-12" align="center"><h2><b>Mantenimiento a equipo de cómputo</b></h2><br></div>
+                        <div class="col-sm-12">
+                            <h5><img class="subheader-image-padding" src="src/img/laptop.png"> Subheader 1</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p>
+                            <h5><img class="subheader-image-padding" src="src/img/printer.png"> Subheader 2</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p><br>
+                            <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><br>
@@ -66,17 +119,43 @@
                 </div>
                 <div class="align-self-center d-none d-md-block d-lg-block" style="position:absolute;z-index:1;width: 460px;left: 50%;">
                     <div class="card no-border">
-                        <div class="card-body">
-                            <h2 class="card-title"><b>Servicio a impresoras</b></h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                            <a href="#">Solicitar cotización</a>
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1" align="center">
+                                    <h2 class="card-title"><b>Servicio a impresoras</b></h2><br>
+                                </div>
+                                <div class="col-md-12">
+                                    <h5><img class="subheader-image-padding" src="src/img/laptop.png">Subheader 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p>
+                                    <h5><img class="subheader-image-padding" src="src/img/printer.png">Subheader 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p><br>
+                                </div>
+                                <div class="col-md-8 offset-md-2">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 d-block d-sm-block d-md-none" align="center">
-                    <h2 class="card-title"><b>Servicio a impresoras</b></h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                    <a href="#">Solicitar cotización</a>
+                <div class="col-sm-12 d-block d-sm-block d-md-none">
+                    <div class="row">
+                        <div class="col-sm-12" align="center"><h2><b>Servicio a impresoras</b></h2><br></div>
+                        <div class="col-sm-12">
+                            <h5><img class="subheader-image-padding" src="src/img/laptop.png"> Subheader 1</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p>
+                            <h5><img class="subheader-image-padding" src="src/img/printer.png"> Subheader 2</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p><br>
+                            <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><br>
@@ -84,20 +163,46 @@
             <div class="row">
                 <div class="align-self-center d-none d-md-block d-lg-block" style="position:absolute;z-index:1;max-width: 460px;right:50%;">
                     <div class="card no-border">
-                        <div class="card-body">
-                            <h2 class="card-title"><b>Tóner y tinta compatible</b></h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                            <a href="#">Solicitar cotización</a>
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1" align="center">
+                                    <h2 class="card-title"><b>Tóner y tinta compatible</b></h2><br>
+                                </div>
+                                <div class="col-md-12">
+                                    <h5><img class="subheader-image-padding" src="src/img/laptop.png">Subheader 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p>
+                                    <h5><img class="subheader-image-padding" src="src/img/printer.png">Subheader 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p><br>
+                                </div>
+                                <div class="col-md-8 offset-md-2">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 offset-md-4" style="z-index:0;">
                     <img src="src/img/toner.jpg" class="img-fluid">
                 </div>
-                <div class="col-sm-4 d-block d-sm-block d-md-none" align="center">
-                    <h2 class="card-title"><b>Tóner y tinta compatible</b></h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                    <a href="#">Solicitar cotización</a>
+                <div class="col-sm-12 d-block d-sm-block d-md-none">
+                    <div class="row">
+                        <div class="col-sm-12" align="center"><h2><b>Tóner y tinta compatible</b></h2><br></div>
+                        <div class="col-sm-12">
+                            <h5><img class="subheader-image-padding" src="src/img/laptop.png"> Subheader 1</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p>
+                            <h5><img class="subheader-image-padding" src="src/img/printer.png"> Subheader 2</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p><br>
+                            <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><br>
@@ -108,37 +213,73 @@
                 </div>
                 <div class="align-self-center d-none d-md-block d-lg-block" style="position:absolute;z-index:1;width: 460px;left: 50%;">
                     <div class="card no-border">
-                        <div class="card-body">
-                            <h2 class="card-title"><b>Conectividad</b></h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                            <a href="#">Solicitar cotización</a>
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1" align="center">
+                                    <h2 class="card-title"><b>Conectividad</b></h2><br>
+                                </div>
+                                <div class="col-md-12">
+                                    <h5><img class="subheader-image-padding" src="src/img/laptop.png">Subheader 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p>
+                                    <h5><img class="subheader-image-padding" src="src/img/printer.png">Subheader 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p><br>
+                                </div>
+                                <div class="col-md-8 offset-md-2">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 d-block d-sm-block d-md-none" align="center">
-                    <h2 class="card-title"><b>Conectividad</b></h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                    <a href="#">Solicitar cotización</a>
+                <div class="col-sm-12 d-block d-sm-block d-md-none">
+                   <div class="row">
+                       <div class="col-sm-12" align="center"><h2><b>Conectividad</b></h2><br></div>
+                       <div class="col-sm-12">
+                           <h5><img class="subheader-image-padding" src="src/img/laptop.png"> Subheader 1</h5>
+                           <p>
+                               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                           </p>
+                           <h5><img class="subheader-image-padding" src="src/img/printer.png"> Subheader 2</h5>
+                           <p>
+                               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                           </p><br>
+                           <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                       </div>
+                   </div>
                 </div>
             </div>
         </div><br>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 d-block d-sm-block d-md-none">
-                    <div class="row">
+                <div class="col-sm-12 d-block d-sm-block d-md-none">
+                    <div class="row" align="center">
                         <div class="col"><img class="logo img-fluid" src="src/img/acer_logo.png"></div>
                         <div class="col"><img class="logo img-fluid" src="src/img/amd_logo.png"></div>
                         <div class="col"><img class="logo img-fluid" src="src/img/asus_logo.png"></div>
                     </div>
-                    <div class="row">
+                    <div class="row" align="center">
                         <div class="col"><img class="logo img-fluid" src="src/img/brother_logo.png"></div>
                         <div class="col"><img class="logo img-fluid" src="src/img/cisco_logo.png"></div>
                         <div class="col"><img class="logo img-fluid" src="src/img/dell_logo.png"></div>
                     </div>
-                    <div class="row">
+                    <div class="row" align="center">
                         <div class="col"><img class="logo img-fluid" src="src/img/epson_logo.png"></div>
-                        <div class="col"><img class="logo img-fluid" src="src/img/hp_tectro.png"></div>
+                        <div class="col"><img class="logo img-fluid" src="src/img/gigabyte_logo.png"></div>
+                        <div class="col"><img class="logo img-fluid" src="src/img/hp_logo.png"></div>
+                    </div>
+                    <div class="row" align="center">
                         <div class="col"><img class="logo img-fluid" src="src/img/intel_logo.png"></div>
+                        <div class="col"><img class="logo img-fluid" src="src/img/lenovo_logo.png"></div>
+                        <div class="col"><img class="logo img-fluid" src="src/img/logitech_logo.png"></div>
+                    </div>
+                    <div class="row" align="center">
+                        <div class="col"><img class="logo img-fluid" src="src/img/nvidia_logo.png"></div>
+                        <div class="col"><img class="logo img-fluid" src="src/img/samsung_logo.png"></div>
+                        <div class="col"><img class="logo img-fluid" src="src/img/tplink_logo.png"></div>
                     </div>
                 </div>
                 <div class="col-md-4 offset-md-1 align-self-center" align="center">
@@ -146,12 +287,12 @@
                         <div class="card-body">
                             <h2 class="card-title"><b>Ventas y accesorios</b></h2>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                            <a href="#">Solicitar cotización</a>
+                            <a href="#" class="d-none d-md-block d-lg-block btn btn-outline-primary">Más información</a>
+                            <a href="#" class="d-block d-sm-block d-md-none btn btn-outline-primary btn-block">Más información</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-6 d-none d-md-block d-lg-block">
+                <div class="col-md-6 offset-md-1 d-none d-md-block d-lg-block">
                     <div class="row" align="center">
                         <div class="col-md-4"><img class="logo" src="src/img/acer_logo.png"></div>
                         <div class="col-md-4"><img class="logo" src="src/img/amd_logo.png"></div>
@@ -164,8 +305,18 @@
                     </div>
                     <div class="row" align="center">
                         <div class="col-md-4"><img class="logo" src="src/img/epson_logo.png"></div>
-                        <div class="col-md-4"><img class="logo" src="src/img/hp_tectro.png"></div>
+                        <div class="col-md-4"><img class="logo" src="src/img/gigabyte_logo.png"></div>
+                        <div class="col-md-4"><img class="logo" src="src/img/hp_logo.png"></div>
+                    </div>
+                    <div class="row" align="center">
                         <div class="col-md-4"><img class="logo" src="src/img/intel_logo.png"></div>
+                        <div class="col-md-4"><img class="logo" src="src/img/lenovo_logo.png"></div>
+                        <div class="col-md-4"><img class="logo" src="src/img/logitech_logo.png"></div>
+                    </div>
+                    <div class="row" align="center">
+                        <div class="col-md-4"><img class="logo" src="src/img/nvidia_logo.png"></div>
+                        <div class="col-md-4"><img class="logo" src="src/img/samsung_logo.png"></div>
+                        <div class="col-md-4"><img class="logo" src="src/img/tplink_logo.png"></div>
                     </div>
                 </div>
             </div>
@@ -173,22 +324,47 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <br><br><br>
-                    <img src="src/img/code.jpg" class="img-fluid" >
+                    <img src="src/img/code.jpg" class="img-fluid" style="margin-top:48px;">
                 </div>
                 <div class="col-md-4 offset-md-4 d-none d-md-block d-lg-block" style="position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;max-width:460px;">
                     <div class="card no-border">
-                        <div class="card-body">
-                            <h2 class="card-title"><b>Desarrollo</b></h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                            <a href="#">Solicitar cotización</a>
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1" align="center">
+                                    <h2 class="card-title"><b>Desarrollo</b></h2><br>
+                                </div>
+                                <div class="col-md-12">
+                                    <h5><img class="subheader-image-padding" src="src/img/laptop.png">Subheader 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p>
+                                    <h5><img class="subheader-image-padding" src="src/img/printer.png">Subheader 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                                    </p><br>
+                                </div>
+                                <div class="col-md-8 offset-md-2">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 d-block d-sm-block d-md-none" align="center">
-                    <h2 class="card-title"><b>Desarrollo</b></h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim, ex nobis repellat? A corporis inventore temporibus consectetur ullam. Nam quos eaque iure expedita molestias corporis nulla!</p>
-                    <a href="#">Solicitar cotización</a>
+                <div class="col-sm-12 d-block d-sm-block d-md-none">
+                    <div class="row">
+                        <div class="col-sm-12" align="center"><h2><b>Desarrollo</b></h2><br></div>
+                        <div class="col-sm-12">
+                            <h5><img class="subheader-image-padding" src="src/img/laptop.png"> Subheader 1</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p>
+                            <h5><img class="subheader-image-padding" src="src/img/printer.png"> Subheader 2</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nesciunt iusto exercitationem enim.
+                            </p><br>
+                            <a href="#" class="btn btn-outline-primary btn-block">Más información</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><br><br><br>
@@ -202,28 +378,28 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form action="mail.php" method="post">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
-                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingresar nombre...">
+                                <input type="text" class="form-control name_phone" id="name" aria-describedby="emailHelp" placeholder="Ingresar nombre...">
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresar e-mail...">
+                                <input type="email" class="form-control email_phone" id="email" aria-describedby="emailHelp" placeholder="Ingresar e-mail...">
                             </div>
                             <div class="form-group">
                                 <label for="phone">Teléfono</label>
-                                <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Ingresar teléfono...">
+                                <input type="tel" class="form-control phone_phone" id="phone" aria-describedby="emailHelp" placeholder="Ingresar teléfono...">
                             </div>
                             <div class="form-group">
                                 <label for="message">Mensaje</label>
-                                <textarea type="email" class="form-control" id="message" aria-describedby="emailHelp" placeholder="Ingresar mensaje..." rows="4"  ></textarea>
+                                <textarea type="email" class="form-control message_phone" id="message" aria-describedby="emailHelp" placeholder="Ingresar mensaje..." rows="4"  ></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                        <button onclick="sendMailPhone()" type="button" class="btn btn-primary">Enviar mensaje</button>
                     </div>
                 </div>
             </div>
@@ -260,29 +436,175 @@
                     <form class="text-white">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingresar nombre...">
+                            <input type="text" class="form-control name_desktop" id="name" aria-describedby="emailHelp" placeholder="Ingresar nombre...">
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresar e-mail...">
+                            <input type="email" class="form-control email_desktop" id="email" aria-describedby="emailHelp" placeholder="Ingresar e-mail...">
                         </div>
                         <div class="form-group">
                             <label for="phone">Teléfono</label>
-                            <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Ingresar teléfono...">
+                            <input type="tel" class="form-control phone_desktop" id="phone" aria-describedby="emailHelp" placeholder="Ingresar teléfono...">
                         </div>
                         <div class="form-group">
                             <label for="message">Mensaje</label>
-                            <textarea type="email" class="form-control" id="message" aria-describedby="emailHelp" placeholder="Ingresar mensaje..." rows="4"  ></textarea>
+                            <textarea type="email" class="form-control message_desktop" id="message" aria-describedby="emailHelp" placeholder="Ingresar mensaje..." rows="4"  ></textarea>
                         </div>
                     </form>
-                    <button type="submit" class="btn btn-outline-light btn-block">Enviar mensaje</button>
+                    <button onclick="sendMail()" type="submit" class="btn btn-outline-light btn-block">Enviar mensaje</button>
                 </div>
                 <div class="col-md-6  d-none d-md-block d-lg-block">
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8182716820643!2d-98.25785068569282!3d19.071726057064154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6f2f3821217%3A0x446f64e0afb8c40b!2sTectro+Centro+De+Soluciones+Tecnol%C3%B3gicas!5e0!3m2!1ses!2smx!4v1471390949276" width="650" height="480" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                 </div>
             </div>
         </footer>
+        <div class="modal" tabindex="-1" role="dialog" id="modalSuccess">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mensaje enviado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Gracias por contactarnos.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="modalFail">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mensaje no enviado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>El mensaje no fue enviado. Intenta nuevamente</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="style-bundle.js"></script>
+    <!-- <script src="style-bundle.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="src/js/anime.min.js"></script>
+    <script>
+        // $('#menu-button').on('click', toggleMenu);
+
+        function sendMail(){
+            $('#exampleModal').modal('hide');
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: {
+                    name: $(".name_desktop").val(),
+                    email: $(".email_desktop").val(),
+                    phone: $(".phone_desktop").val(),
+                    message: $(".message_desktop").val()
+                },
+                success: function (response) {
+                    if(response==1){
+                        $('#modalSuccess').modal('show');
+                    }
+                    else{
+                        $('#modalFail').modal('show');
+                    }
+                }
+            });
+        }
+
+        function sendMailPhone(){
+            $('#exampleModal').modal('hide');
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: {
+                    name: $(".name_phone").val(),
+                    email: $(".email_phone").val(),
+                    phone: $(".phone_phone").val(),
+                    message: $(".message_phone").val()
+                },
+                success: function (response) {
+                    if(response==1){
+                        $('#modalSuccess').modal('show');
+                    }
+                    else{
+                        $('#modalFail').modal('show');
+                    }
+                }
+            });
+        }
+
+        function toggleMenu() {
+            var open_menu_timeline = anime.timeline();
+            $("#menu-button").off("click");
+            if(!$("#menu-button").hasClass("active")){
+                $("#menu-button i").html('');
+                $("#menu-button i").html('close');
+                $('#menu-button').addClass('active');
+
+                open_menu_timeline.add({
+                    targets: '.menu',
+                    height: '100%',
+                    opacity: 1,
+                    easing: 'easeInSine',
+                    duration: 100
+                })
+                .add({
+                    targets: '#menu-button,#phone-button',
+                    color: '#FFF',
+                    easing: 'easeInSine',
+                    duration: 100
+                })
+                .add({
+                    targets: '.menu-list',
+                    opacity: 1,
+                    duration: 100
+                })
+                .finished.then(function(){
+                    $('#menu-button').on('click', toggleMenu);
+                });
+            }
+            else{
+                $("#menu-button i").html('');
+                $("#menu-button i").html('menu');
+                $('#menu-button').removeClass('active');
+
+                open_menu_timeline.add({
+                    targets: '.menu-list',
+                    opacity: 0,
+                    easing: 'easeOutCirc',
+                    duration: 400
+                })
+                .add({
+                    targets: '.menu',
+                    height: '0',
+                    easing: 'easeInSine',
+                    duration: 100
+                }, '-=400')
+                .add({
+                    targets: '#menu-button,#phone-button',
+                    color: '#000',
+                    easing: 'easeInSine',
+                    duration: 100
+                }).finished.then(function(){
+                    $('#menu-button').on('click', toggleMenu);
+                });
+            }
+        }
+    </script>
 </body>
 </html>

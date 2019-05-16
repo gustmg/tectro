@@ -1,8 +1,9 @@
 <?php
-	$nombre=$_POST['nombre'];
+	$nombre=$_POST['name'];
 	$email=$_POST['email'];
-	$asunto=$_POST['asunto'];
-	$mensaje=$_POST['mensaje'];
+	$telefono=$_POST['phone'];
+	$mensaje=$_POST['message'];
+	$asunto='Contacto a través de página web';
 
 	$cuerpo=" 
 			<html> 
@@ -12,7 +13,7 @@
 			<body> 
 				<h4>Nombre: </h4>".$nombre."
 				<h4>Correo: </h4>".$email."
-				<h4>Asunto: </h4>".$asunto."
+				<h4>Teléfono: </h4>".$telefono."
 				<h4>Mensaje: </h4>".$mensaje."
 			</body> 
 			</html> 

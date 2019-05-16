@@ -125,7 +125,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
     bottom: 24px;
     right: 24px;
     z-index: 5;
-    background-color: #169b0c !important;
 }
 
 .logo-smartphone{
@@ -143,4 +142,35 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
 
 .tectro-color{
     color: #005b99;
+}
+
+.menu {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #005b99; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.selectable{
+    cursor: pointer;
+}
+
+.subheader-image-padding{
+    padding-right: 12px;
+}
+
+#menuContent{
+    position:fixed;
+    margin-top:64px;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    transition: 0.5s;
 }
