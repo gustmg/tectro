@@ -166,6 +166,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
 }
 
 #menuContent{
+    font-family: 'Poppins', sans-serif;
     position:fixed;
     margin-top:64px;
     width: 100%;
@@ -174,3 +175,20 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
     border-bottom: 1px solid grey;
     transition: 0.5s;
 }
+
+.menu-link-list{
+    list-style-type: none;
+    padding:0;
+}
+
+.nav-menu-link{
+    color: black;
+    opacity: 0.72;
+}
+
+.nav-menu-link:hover{
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+}
+
