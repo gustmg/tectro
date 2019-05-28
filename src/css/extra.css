@@ -192,3 +192,14 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1300px)
     opacity: 1;
 }
 
+.backdrop{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: black;
+    opacity:0;
+    z-index:2;
+    display: none;
+}
